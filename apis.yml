@@ -1,23 +1,71 @@
 aid: proximusglobal
+
 name: Proximus Global
-description: 'Proximus Global is a company surfaced via the API Evangelist harvest backlog (source: gartner-mq)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.proximusglobal.com/wp-content/uploads/2025/04/proximusglobal-og-1200x630-1.png
+
+description: Proximus Global is a global communications and digital identity company combining Telesign, BICS, and Route Mobile. It provides connectivity,
+  fraud protection, messaging, and cloud communications services, reaching over 5 billion subscribers and securing more than 180 billion transactions
+  annually. The company operates in 230+ countries, holds 35+ patents, and invests in next‑gen technologies like 5G, IoT, eSIM, and AI‑driven
+  security.
+
 url: https://raw.githubusercontent.com/api-evangelist/proximusglobal/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:gartner-mq
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-03 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-03'
+
 modified: '2026-10-03'
+
 tags:
 - Company
-apis: []
+- Communications
+- DigitalIdentity
+- Connectivity
+- FraudProtection
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/proximusglobal-hosts.yml
+- type: Vendors
+  url: vendors/proximusglobal-vendors.yml
+- type: PrivacyPolicy
+  url: https://www.proximusglobal.com/privacy-notice
+- type: Newsroom
+  url: https://www.proximusglobal.com/newsroom/
+- type: Leadership
+  url: https://www.proximusglobal.com/leadership/
+- type: DomainSecurity
+  url: security/proximusglobal-domain-security.yml
 - type: Website
   url: https://www.proximusglobal.com
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: No OpenAPI, AsyncAPI, GraphQL, or other contract found at api.proximusglobal.com.
+  evidence:
+  - url: https://api.proximusglobal.com/openapi.json
+    status: 0
+  checked: '2026-10-03'
+x-enrichment:
+  date: '2026-10-03'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
